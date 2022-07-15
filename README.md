@@ -1,7 +1,7 @@
 # Neural_Network_Charity_Analysis
 
 ## Overview of Analysis:
-Client requested a machine learning model that predicts how successful an applicatn will be if functed by their charity based of the provided data. The main focus is to use a Neural Network, however, other models are explored. 
+Client requested a machine learning model that predicts how successful an applicant will be if funded by their charity based of the provided data. The main focus is to use a Neural Network; however, other models are explored. 
 
 ## Resources
 - Source Data: charity_data.csv
@@ -16,7 +16,7 @@ What variable(s) are considered the target(s) for your model?
 
 What variable(s) are considered to be the features for your model?
 
-- The following columns were consider to be features in the model:
+- The following columns were considered to be features in the model:
   - AFFILIATION—Affiliated sector of industry
   - CLASSIFICATION—Government organization classification
   - USE_CASE—Use case for funding
@@ -31,7 +31,7 @@ What variable(s) are neither targets nor features, and should be removed from th
 - The EIN and NAME columns were columns used for identification and were not included as a feature or a target.
 
 
-### Compiling, Traning, and Evaluating the Model
+### Compiling, Training, and Evaluating the Model
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
@@ -48,16 +48,15 @@ Were you able to achieve the target model performance?
 What steps did you take to try and increase model performance?
 
 - I used kerastuner to optimize the number of layers and nodes
-- I binned the ask ammount column in order to reduce noise
+- I binned the ask amount column in order to reduce noise
 - I attempted to increase and decrease the number of epochs
-- I attempted to drop various columns to see if they were confusing the model
-- I also tried using the following seperate models:
+- I also tried using the following separate models:
   - Logistical Regression - best accuracy observed: 0.720
-  - Random Forest -         best accuracy observed: 0.725
+  - Random Forest -         best accuracy observed: 0.726
   - SVM -                   best accuracy observed: 0.718
-
-
+- I attempted to drop various columns to see if they were confusing the model
 
 ## Summary
 
+The best model created in this case had an accuracy of 0.73%. This did not meet the target of 0.75%. This involved many attempts of optimization using various methods such as binning, terastuner, and feature removal. As far as different models, Random Forest provided the best accuracy, however, it also did not meet the target.
 
